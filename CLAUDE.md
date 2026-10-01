@@ -32,5 +32,3 @@ Database: MySQL `booksdb` on `localhost:3306`, `ddl-auto=update`. The `booksdb_*
 ./mvnw spring-boot:run
 ./mvnw test -Dtest=BookProjectApplicationTests
 ```
-
-Caveat: `src/main/java/module-info.java` (uncommitted) declares `module Exam {}` and looks like it was copied from another Eclipse project. A named module with no `requires` breaks compilation against Spring, so delete it unless it was intended.
